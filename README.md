@@ -101,7 +101,6 @@
 | **Handling Large Apps**     | Poor handling of large or complex applications with many updates.  | Optimized for large apps with efficient handling of complex updates. |
 | **UI Responsiveness**       | Poor UI responsiveness in case of heavy updates.                  | Improved responsiveness, even during heavy updates.               |
 
-
 ### Thread
 A thread is the smallest unit of execution within a process in computer science. It is a sequence of instructions that can be executed independently by a computer’s central processing unit (CPU). Threads are the building blocks of multitasking in modern operating systems, allowing multiple operations to run concurrently.
 
@@ -112,3 +111,33 @@ A thread is the smallest unit of execution within a process in computer science.
 #### Types of Threads:
 - `Main Thread`: The primary thread where the program starts. Most of the time, user interaction and other major tasks happen here.
 - `Worker Threads`: Additional threads that can be created to perform tasks concurrently, such as background work, without blocking the main thread.
+
+## Hook
+- A hook is a special function in React that allows functional components to use state, lifecycle methods, and other features that were previously only available in class components. Hooks enable functional components to be more powerful and manage state and side effects without requiring class-based components.
+
+**Key Points:**
+- `useState`: Manages state in functional components.
+- `useEffect`: Handles side effects (e.g., data fetching, timers).
+- `useContext`: Accesses context without prop drilling.
+- `useRef`: References DOM elements or persistent values without causing re-renders.
+- `useMemo` & `useCallback`: Optimizes performance by memoizing values or functions.
+
+## Props
+- In React, props are used to pass data from a parent component to a child component.
+- Props help in creating flexible and reusable components by passing data between them.
+
+**Key Points:**
+- `Immutable`: Props cannot be changed by the child component.
+- `Dynamic`: Allows components to be reusable with different data.
+- `Default Props`: You can set default values if props are not passed.
+
+## State
+- In React, state is a built-in object used to store data or information about a component. Unlike props, state is managed within the component and can be changed, allowing the component to react and re-render dynamically when the state updates.
+
+# Differences Between State and Props
+
+| **Feature**   | **State**                        | **Props**                     |
+|---------------|----------------------------------|--------------------------------|
+| **Definition**| Data managed within the component. | Data passed from parent to child. |
+| **Mutable**   | Yes, it can be updated.          | No, it is read-only.           |
+| **Purpose**   | Used for dynamic and local data. | Used to pass external data.    |
