@@ -100,3 +100,15 @@
 | **Interruptible Updates**   | Updates can't be interrupted.                                      | Updates can be interrupted, allowing React to work on more urgent updates first. |
 | **Handling Large Apps**     | Poor handling of large or complex applications with many updates.  | Optimized for large apps with efficient handling of complex updates. |
 | **UI Responsiveness**       | Poor UI responsiveness in case of heavy updates.                  | Improved responsiveness, even during heavy updates.               |
+
+
+### Thread
+A thread is the smallest unit of execution within a process in computer science. It is a sequence of instructions that can be executed independently by a computer’s central processing unit (CPU). Threads are the building blocks of multitasking in modern operating systems, allowing multiple operations to run concurrently.
+
+Thread = Small task or instruction.
+Process = A larger task that can contain many threads.
+CPU = The brain that handles these tasks.
+
+#### Types of Threads:
+- `Main Thread`: The primary thread where the program starts. Most of the time, user interaction and other major tasks happen here.
+- `Worker Threads`: Additional threads that can be created to perform tasks concurrently, such as background work, without blocking the main thread.
