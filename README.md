@@ -134,7 +134,7 @@ A thread is the smallest unit of execution within a process in computer science.
 ## State
 - In React, state is a built-in object used to store data or information about a component. Unlike props, state is managed within the component and can be changed, allowing the component to react and re-render dynamically when the state updates.
 
-# Differences Between State and Props
+### Differences Between State and Props
 
 | **Feature**   | **State**                        | **Props**                     |
 |---------------|----------------------------------|--------------------------------|
