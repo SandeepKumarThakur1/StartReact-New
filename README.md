@@ -105,9 +105,9 @@
 ### Thread
 A thread is the smallest unit of execution within a process in computer science. It is a sequence of instructions that can be executed independently by a computer’s central processing unit (CPU). Threads are the building blocks of multitasking in modern operating systems, allowing multiple operations to run concurrently.
 
-Thread = Small task or instruction.
-Process = A larger task that can contain many threads.
-CPU = The brain that handles these tasks.
+- `Thread` = Small task or instruction.
+- `Process` = A larger task that can contain many threads.
+- `CPU` = The brain that handles these tasks.
 
 #### Types of Threads:
 - `Main Thread`: The primary thread where the program starts. Most of the time, user interaction and other major tasks happen here.
