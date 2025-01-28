@@ -77,3 +77,26 @@
 | **What it does**    | Finds the differences between the two Virtual DOMs. | Uses the diffing results to efficiently update the real DOM. |
 | **Goal**            | Identify what changed in the Virtual DOM.         | Apply the minimal updates to the real DOM based on the diffing results. |
 
+### React Fiber
+- React Fiber is the new reconciliation algorithm that was introduced in React 16. It improves the rendering performance by breaking the work into chunks and allowing React to work asynchronously.
+
+**Key Features:**
+- More responsive UI by prioritizing updates.
+- Enabling features like Concurrent Mode and Suspense.
+
+### React DevTools
+- React DevTools is a Chrome and Firefox extension that allows you to inspect the React component tree, state, props, and hooks.
+
+**Key Features:**
+- Visualizes the component tree for easier debugging.
+- Inspect and modify the state/props of components directly in the browser.
+- Offers hooks support, helping you debug custom hooks and useState/useEffect behavior.
+
+| **Concept**                | **Reconciliation (Pre-Fiber)**                                    | **React Fiber**                                                    |
+|----------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------|
+| **Rendering**               | Synchronous: All work is done in one go, blocking the thread.      | Asynchronous: Work is split into smaller units and can be paused/resumed. |
+| **Performance**             | Slower for complex updates or large applications.                  | Faster due to prioritization, time-slicing, and concurrency.       |
+| **Update Prioritization**   | No prioritization (all updates are handled the same).              | Updates are prioritized based on urgency (e.g., animations, user inputs). |
+| **Interruptible Updates**   | Updates can't be interrupted.                                      | Updates can be interrupted, allowing React to work on more urgent updates first. |
+| **Handling Large Apps**     | Poor handling of large or complex applications with many updates.  | Optimized for large apps with efficient handling of complex updates. |
+| **UI Responsiveness**       | Poor UI responsiveness in case of heavy updates.                  | Improved responsiveness, even during heavy updates.               |
