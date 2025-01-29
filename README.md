@@ -141,3 +141,38 @@ A thread is the smallest unit of execution within a process in computer science.
 | **Definition**| Data managed within the component. | Data passed from parent to child. |
 | **Mutable**   | Yes, it can be updated.          | No, it is read-only.           |
 | **Purpose**   | Used for dynamic and local data. | Used to pass external data.    |
+
+
+## JSX (JavaScript XML)
+
+### What is JSX?
+JSX (**JavaScript XML**) is a syntax extension for JavaScript used in React to create UI components. It allows writing HTML-like code inside JavaScript, making it easier to structure the UI.
+
+### Key Features:
+- **Looks Like HTML**: JSX allows writing familiar HTML-like syntax.
+- **Embeds JavaScript**: JavaScript expressions can be used inside JSX using `{}`.
+- **Transpiled by Babel**: JSX is converted to standard JavaScript before execution.
+
+### Example:
+```javascript
+function Greeting() {
+  const name = "Alice";
+  return <h1>Hello, {name}!</h1>; // Embedding JavaScript inside JSX
+}
+```
+
+### Why Use JSX?
+- **Improves readability and maintainability** of UI code.
+- **Prevents XSS attacks** by escaping injected values.
+- **Optimized performance** as React compiles JSX to JavaScript efficiently.
+
+**JSX simplifies building React components by combining UI and logic in one place**
+
+### Difference Between .jsx and .js Files
+| **Feature**      | **.jsx (JavaScript XML)**                 | **.js (JavaScript)**                  |
+|-----------------|--------------------------------|--------------------------------|
+| **Purpose**     | Used for React components with JSX syntax. | General JavaScript code (functions, logic, APIs, etc.). |
+| **Syntax**      | Supports JSX (HTML-like syntax inside JS). | Standard JavaScript syntax. |
+| **Compilation** | Needs Babel to transpile JSX into JS. | No additional compilation required. |
+| **Usage**       | Mostly used for React UI components. | Used for utility functions, API calls, or business logic. |
+| **File Extension** | `.jsx` is conventionally used for JSX-based components. | `.js` is used for JavaScript logic and functions. |
