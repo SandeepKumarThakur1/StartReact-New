@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 body {
-  background-color: #333;
+  background: url(https://img.freepik.com/free-psd/purple-design-background_1297-186.jpg?t=st=1738982692~exp=1738986292~hmac=bd86c5503a5f3f98b97f81148a893b2b8de41bcbdd74f666e2decfd69c15dbe1&w=740);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
 }
