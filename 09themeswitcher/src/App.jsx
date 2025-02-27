@@ -1,22 +1,11 @@
-import './App.css';
-import Card from './components/Card';
-import ThemeBtn from './components/ThemeBtn';
+import React from 'react'
 
 const App = () => {
   return (
-    <>
-      <div className="flex flex-wrap min-h-screen items-center">
-        <div className="w-full">
-          <div className="w-full max-w-sm mx-auto flex justify-end mb-4">
-            <ThemeBtn />
-          </div>
-          <div className="w-full max-w-sm mx-auto">
-            <Card/>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+    <div>
+      <h1>Theme Switcher</h1>
+    </div>
+  )
+}
 
-export default App;
+export default App
